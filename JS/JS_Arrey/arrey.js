@@ -37,6 +37,7 @@ birds.unshift("Parrot");
 console.log(birds);
 //分割
 // 元の配列から 指定範囲の要素をコピーした新しい配列 を返すだけなので変数の中の配列は変わらないので注意
+<<<<<<< Updated upstream
 //  ['Parrot', 'Raven', 'Falcon', 'Owl']
 // let birds2 = birds.slice(開始位置（インデックス）,削除位置（インデックス‐１となる。る。要は指定した数を含まない）);
 // let birds2 = birds.slice(1,2);はインデックス１のraven,2はインデックス１のravenを指す
@@ -44,6 +45,14 @@ let birds2 = birds.slice(2,4);
 console.log(birds2);
 
 let birds3 = birds.slice(0,4);
+=======
+// 0は開始位置、2は終了位置（終了位置は含まれない）つまり0から1までの要素を取得
+let birds2 = birds.slice(0,2);
+console.log(birds2);
+
+// -1 は末尾の要素を取得
+let birds3 = birds.slice(-1);
+>>>>>>> Stashed changes
 console.log(birds3);
 
 // 指定位置追加
@@ -55,6 +64,7 @@ console.log(birds);
 // 指定位置変更
 birds.splice(1, 1, "Swallow");
 console.log(birds);
+<<<<<<< Updated upstream
 
 // 配列の等価性
 // JSの配列は値ではなく、メモリ上の保存箇所を指す
@@ -107,3 +117,5 @@ const BoardGame =[
 ];
 console.log(Alcohol);
 console.log(BoardGame[2][1]);
+=======
+>>>>>>> Stashed changes
